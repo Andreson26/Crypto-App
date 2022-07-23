@@ -24,29 +24,16 @@ class App extends Component {
     }else {
       this.setState({theme: 'dark'})
     }
-    localStorage.getItem('theme')
-    
-    console.log(theme, 'theme')
-    
   }
 
   handleToggleDropdown = () => {
-    if(this.state.dropdown == false ){
+    if(this.state.dropdown === false ){
       this.setState({dropdown: true}) 
         
       }else {
         this.setState({dropdown: false})
       }  
   }
-
-  componentDidMount() {
-    
-    localStorage.setItem('theme', this.state.theme)
-  
-    
-  }
-
-  
   
   render() {
     const {dropdown, theme} = this.state
