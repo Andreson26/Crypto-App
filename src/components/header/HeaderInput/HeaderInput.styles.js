@@ -4,9 +4,8 @@ export const Form = styled.form`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${(props)=> props.theme.navElementbackground};
+    background-color: ${(props)=> props.theme.elementBackground};
     border-radius: 10px;
-    
     padding-left: 10px;
     
     input {
@@ -21,11 +20,8 @@ export const Form = styled.form`
             color: ${(props)=> props.theme.color}
         };
     }
-
-    
 `
 export const SearchIcon = styled.img`
     height: 25px;
     filter: ${(props) => props.theme.iconColor};
-    
 `

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import NavBar from './components/header/NavBar/NavBar';
-//import Coin from './pages/Coin/Coin';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Coins from './pages/Coins/Coins';
 import Coin from './pages/Coin/Coin'
 import { ThemeProvider } from 'styled-components';
-import { darkTheme, lightTheme } from './theme/Theme';
+import { darkTheme, lightTheme } from './theme/theme';
 import  './App.css';
 
 
@@ -20,42 +19,26 @@ class App extends Component {
   handleToggleTheme = () => {
     const { theme } = this.state
     if(theme === 'dark') {
-      this.setState({theme: 'light'})
-    }else {
-      this.setState({theme: 'dark'})
+      this.setState({ theme: 'light' })
+    } else {
+      this.setState({ theme: 'dark' })
     }
-    localStorage.getItem('theme')
-    
-    console.log(theme, 'theme')
-    
   }
 
   handleToggleDropdown = () => {
-    if(this.state.dropdown == false ){
-      this.setState({dropdown: true}) 
-        
-      }else {
-        this.setState({dropdown: false})
+    if(this.state.dropdown === false ){
+      this.setState({ dropdown: true }) 
+    } else {
+        this.setState({ dropdown: false })
       }  
   }
-
-  componentDidMount() {
-    
-    localStorage.setItem('theme', this.state.theme)
-  
-    
-  }
-
-  
   
   render() {
-    const {dropdown, theme} = this.state
+    const { dropdown, theme } = this.state
     return (
       <ThemeProvider theme={theme==='dark' ? darkTheme : lightTheme}>
         <div className='App'>
-        
           <Router>
-
             <NavBar
               dropdown={dropdown}
               handleToggleTheme={this.handleToggleTheme}
@@ -67,17 +50,11 @@ class App extends Component {
               <Route  path="/portfolio" component={Portfolio} />
               <Route path="/:coinId" component={Coin} />
             </Switch>
-        
-          
           </Router>
-        
-        
         </div>
       </ThemeProvider>
-      
     );
-  }
-  
+  } 
 }
 
 export default App;

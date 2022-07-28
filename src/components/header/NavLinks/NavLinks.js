@@ -7,8 +7,8 @@ export default class NavLinks extends Component {
     return (
       <ul>
         <LinksWrapper>
-            <LinkTag to="/coins">Coins</LinkTag>
-            <LinkTag to="/portfolio">Porfolio</LinkTag>
+          <LinkTag to="/coins">Coins</LinkTag>
+          <LinkTag to="/portfolio">Porfolio</LinkTag>
         </LinksWrapper>
       </ul>
     )

@@ -8,7 +8,7 @@ export const CurrencyWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${(props)=> props.theme.navElementbackground};
+    background-color: ${(props)=> props.theme.elementBackground};
     border-radius:10px;
     padding: 10px;
     cursor: pointer;
@@ -22,18 +22,31 @@ export const CurrencyWrapper = styled.div`
 
     }
     
-   
-    
     h4 {
-        margin: auto 8px auto 15px;
+        margin: auto 5px auto 8px;
        }
 `
 
-/*div {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-}*/
+export const ArrowsWrapper = styled.div`
+    margin-top: 3px;
+`
+
+export const ArrowUp = styled.div`
+    width: 0;
+    height: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom:6px solid green;
+    margin-bottom: 2px: 
+`
+
+export const ArrowDown = styled.div`
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid green;
+    margin-top: 2px;
+    
+`
+
