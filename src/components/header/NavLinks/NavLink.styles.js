@@ -13,11 +13,11 @@ export const LinkTag = styled(Link)`
     color: ${(props)=> props.theme.color};
 
     &:active {
-        background-color: ${(props)=> props.theme.navElementbackground};  
+        background-color: ${(props)=> props.theme.elementBackground};  
     }
 
     &:focus {
-        background-color: ${(props)=> props.theme.navElementbackground};   
+        background-color: ${(props)=> props.theme.elementBackground};   
     }
     
 `

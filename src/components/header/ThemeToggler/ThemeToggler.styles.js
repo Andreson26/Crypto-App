@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const Form = styled.form`
     padding: 10px 15px;
-    background-color: ${(props) => props.theme.navElementbackground};
+    background-color: ${(props) => props.theme.elementBackground};
     border-radius: 10px;
     margin-left: 40px;
-
 `
 
 export const StyleLabel = styled.label`
@@ -21,7 +20,7 @@ export const StyleLabel = styled.label`
     span {
         position: absolute;
         cursor: pointer;
-        background-color: ${(props)=> props.theme.navBackground};
+        background-color: ${(props)=> props.theme.background};
         border-radius: 25px;
         top: 0;
         right: 0;
@@ -48,7 +47,7 @@ export const StyleLabel = styled.label`
      }
 
      input[type="checkbox"]:checked + span {
-        background-color: ${(props)=> props.theme.navBackground};
+        background-color: ${(props)=> props.theme.background};
       }
 `
 

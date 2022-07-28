@@ -5,7 +5,7 @@ export const DropdownWrapper = styled.div`
     right: 10%;
     top: 11%;
     border-radius: 10px;
-    background-color: ${(props)=> props.theme.navElementbackground}; 
+    background-color: ${(props)=> props.theme.elementBackground}; 
     padding: 10px;
     cursor: pointer;
 
@@ -16,7 +16,7 @@ export const DropdownWrapper = styled.div`
         border-radius: 10px;
 
         :hover {
-            background-color: ${(props) => props.theme.navBackground};
+            background-color: ${(props) => props.theme.background};
         }
 
         span {
