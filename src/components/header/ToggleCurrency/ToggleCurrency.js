@@ -1,7 +1,5 @@
 import React from 'react'
 import { CurrencyWrapper, ToggleWrapper, ArrowsWrapper, ArrowUp, ArrowDown } from './toggleCurrency.styles'
-//import chevronUp from '../../Icons/ChevronUp.svg'
-//import chevronDown from '../../Icons/ChevronDown.svg'
 import Dropdown from './Dropdown'
 
 

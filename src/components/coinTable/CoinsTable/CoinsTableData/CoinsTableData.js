@@ -1,9 +1,10 @@
 import React from 'react'
+import { DataTableContainer } from './CoinsTableData.styles'
 
 export default function CoinsTableData({isLoading, hasError, coinList}) {
     console.log(coinList)
   return (
-    <table>
+    <DataTableContainer>
         <thead>
             <tr>
                 <th># Name</th>
@@ -31,13 +32,13 @@ export default function CoinsTableData({isLoading, hasError, coinList}) {
                         <td>{coin.price_change_percentage_24h_in_currency}%</td>
                         <td>{coin.total_volume} {coin.market_cap}</td>
                         <td>{coin.circulating_supply} {coin.total_supply}</td>
-                        {/* sparkline graph to be done later <td>{coincoin.sparkline_in_7d.price}</td>*/}
+                        
                     </tr>
                 
                 ))}
 
         </tbody>
 
-    </table> 
+    </DataTableContainer> 
   )
 }

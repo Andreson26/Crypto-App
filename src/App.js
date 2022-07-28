@@ -29,7 +29,7 @@ class App extends Component {
     if(this.state.dropdown === false ){
       this.setState({ dropdown: true }) 
     } else {
-        this.setState({ dropdown: false })
+        this.setState({ dropdown: !this.state.dropdown })
       }  
   }
   

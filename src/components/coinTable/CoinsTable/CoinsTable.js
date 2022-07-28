@@ -7,7 +7,7 @@ export default function CoinTable({ ...rest}) {
   return (
     <TableContainer>
       <CoinsTableHeadr />
-      <hr />
+      
       <CoinsTableData {...rest}/>
     </TableContainer>
   )
